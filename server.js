@@ -102,9 +102,9 @@ io.on("connection", (socket) => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve("./public/index.html"));
+  res.send("Server is running");
 });
-
+a;
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
